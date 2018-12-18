@@ -1,21 +1,27 @@
 body {
   font-family: 'Oswald', sans-serif;
   font-size: 28px;
-  color: rgb(36,36,36);
+  color: rgb(76,88,102);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 
-.dividers {
-  height: 33vh;
+body > section {
+  margin: auto;
+  padding: 15px 15px;
 }
 
 h1 {
-  font-size: 112px;
+  font-size: 100px;
   font-weight: 700;
 }
 
 h2 {
   font-size: 32px;
-  color: rgb(74,74,74);
+  color: rgb(112,128,144);
 }
 
 h3 {
@@ -57,15 +63,16 @@ a:hover{
 
 p {
   font-size: 20px;
-  color: rgb(74,74,74);
+  color: rgb(112,128,144);
 }
 
 .subtext {
+  margin-top: 10px;
   padding-left: 15px;
 }
 
 .project {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 footer {
