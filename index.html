@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/loading.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <title>James Lo</title>
+  </head>
+  <body>
+    <div class="dividers"></div>
+    <div class="dividers">
+      <section>
+        <div class="main home">
+          <h1>James Lo</h1>
+          <h2>Software Developer</h2>
+        </div>
+        <div class="main">
+          <h3>About Me</h3>
+          <div>
+            <p>I'm a software engineer. I love learning and solving problems.  <a href=#>Click here for my resume.</a></p>
+          </div>
+        </div>
+        <div class="main">
+          <h3>Projects</h3>
+          <div>
+            <section class="project">
+              <h4>Yawp!
+                [ <a href="http://yawp-app.herokuapp.com/#/">live</a>
+                 |
+                <a href="https://github.com/lojames/Yawp">github</a> ]
+              </h4>
+              <p class="subtext">A location based, searchable business directory with crowdsourced reviews and images built on Rails and React-Redux.</p>
+            </section>
+            <section class="project">
+              <h4>Please Don't Shoot the Ducks
+                [ <a href="#">live</a>
+                 |
+                <a href="https://github.com/lojames/ducks">github</a> ]
+              </h4>
+              <p class="subtext">A multi-layer, JavaScript and HTML Canvas, gallery style shooter.</p>
+            </section>
+            <section class="project">
+              <h4>query.js
+                [ <a href="https://github.com/lojames/query.js">github</a> ]
+              </h4>
+              <p class="subtext">A JavaScript wrapper library that makes life easier.</p>
+            </section>
+          </div>
+        </div>
+        <div class="main">
+          <h3>Contact</h3>
+          <div>
+            <h2>lo.jamess@gmail.com</h2>
+          </div>
+        </div>
+        <div class="main">
+          <div class="loading">
+            <h3>Redirecting to GitHub<span>.</span><span>.</span><span>.</span></h3>
+          </div>
+        </div>
+        <div class="main">
+          <div class="loading">
+            <h3>Redirecting to Linkedin<span>.</span><span>.</span><span>.</span></h3>
+          </div>
+        </div>
+        <div class="main">
+          <div class="loading">
+            <h3>Redirecting to AngelList<span>.</span><span>.</span><span>.</span></h3>
+          </div>
+        </div>
+        <footer>
+          <ul>
+            <li>
+              <a href="#" title="Home">
+                <i class="fas fa-home"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="About Me">
+                <i class="far fa-user"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="Projects">
+                <i class="fas fa-toolbox"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="Contact">
+                <i class="fas fa-phone"></i>
+              </a>
+            </li>
+            <li>
+              <a href="http://www.github.com/lojames" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="http://www.linkedin.com/in/lo-jamess" title="Linkedin">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li>
+              <a href="http://www.angel.co/lo-jamess" title="AngelList">
+                <i class="fab fa-angellist"></i>
+              </a>
+            </li>
+          </ul>
+        </footer>
+        <script type="text/javascript">
+          $('footer > ul > li > a').click(function(){
+            $('section > div').hide();
+            $('section > div').eq($(this).parent().index()).css('display', 'flex');
+          });
+        </script>
+      </section>
+    </div>
+    <div class="dividers"></div>
+  </body>
+</html>
