@@ -62,6 +62,7 @@ a:hover{
 }
 
 p {
+  max-width: 800px;
   font-size: 20px;
   color: rgb(112,128,144);
 }
@@ -77,4 +78,8 @@ p {
 
 footer {
   margin: 24px auto;
+}
+
+.center-wrapper p {
+  text-align: center;
 }
