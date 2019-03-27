@@ -11,11 +11,22 @@
     <script type="text/javascript">
       $(function(){
         $('footer > ul > li > a').click(function(){
+          const a = this;
           const div = "#"+this.title;
           $('section > div:visible').slideUp(450, 'swing', function(){
             $(div).css('display', 'flex');
             $(div).hide();
             $(div).slideDown(250);
+          });
+          $('footer a').css("color", "rgb(76,88,102)");
+          $('footer a').hover(
+            function(){$(this).css("color", "#0077B5");
+            }, function(){$(this).css("color", "rgb(76,88,102)");
+          });
+
+          $(this).hover(
+            function(){$(this).css("color", "#0077B5");
+          }, function(){$(this).css("color", "#0077B5");
           });
         });
       });
@@ -95,7 +106,7 @@
       <footer>
         <ul>
           <li>
-            <a href="#" title="Home">
+            <a href="#" title="Home" id="link-home">
               <i class="fas fa-home"></i>
             </a>
           </li>
